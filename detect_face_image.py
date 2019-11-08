@@ -20,7 +20,8 @@ for (x, y, w, h) in faces:
     # Crop the image
     crop_img = img[y:y+h, x:x+w]
     cv2.imshow("cropped", crop_img)
-    cv2.imwrite('cropped'+i+'.png',crop_img)
+    istring = str(i)
+    cv2.imwrite('cropped'+istring+'.png',crop_img)
     # Display the output
     cv2.imshow('img', img)
     cv2.imwrite('foto.png',img)
